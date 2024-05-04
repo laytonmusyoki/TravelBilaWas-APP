@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:elevation="0dp"
+    android:background="@color/orange"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/app"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/orange">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TRAVELBILAWAS"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Booking App"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/app"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/login_bg">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CREATE YOUR ACCOUNT"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="27dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:inputType="text"
+                android:drawableLeft="@drawable/icn_person_24"
+                android:drawablePadding="7dp"
+                android:layout_height="50dp"
+                android:textColorHint="@color/white"
+                android:background="@drawable/login_inputs"
+                android:hint="Enter your username"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:drawableLeft="@drawable/icn_email_24"
+                android:drawablePadding="7dp"
+                android:inputType="textEmailAddress"
+                android:layout_height="50dp"
+                android:textColorHint="@color/white"
+                android:background="@drawable/login_inputs"
+                android:hint="Enter your email"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:inputType="number"
+                android:drawableLeft="@drawable/icn_email_24"
+                android:drawablePadding="7dp"
+                android:layout_height="50dp"
+                android:textColorHint="@color/white"
+                android:background="@drawable/login_inputs"
+                android:hint="Enter your mobile"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/icn_lock_24"
+                android:drawablePadding="7dp"
+                android:inputType="textPassword"
+                android:textColorHint="@color/white"
+                android:background="@drawable/login_inputs"
+                android:hint="Enter your password"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/icn_lock_24"
+                android:drawablePadding="7dp"
+                android:textColorHint="@color/white"
+                android:background="@drawable/login_inputs"
+                android:hint="Confirm your password"/>
+
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:editable="false"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="REGISTER"
+                android:clickable="true"
+                android:background="@drawable/submit_btn"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="27dp"
+                    android:textColor="@color/black"
+                    android:layout_height="27dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:text="Agree to the terms and conditions !"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginTop="30dp"
+                android:textSize="15dp"
+                android:text="Already have an account?"/>
+
+
+
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:editable="false"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Login"
+                android:textSize="15dp"
+                android:clickable="true"
+                android:background="@drawable/already_btn"/>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

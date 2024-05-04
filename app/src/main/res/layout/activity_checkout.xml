@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/purple"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whitish">
+        <include layout="@layout/toolbar_layout" android:id="@+id/toolba"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/event"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Booking Summary"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="30dp"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category"
+                            android:textColor="#3949AB"
+                            android:textStyle="bold"
+                            android:textSize="23dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Seats"
+                            android:textColor="#3949AB"
+                            android:textStyle="bold"
+                            android:textSize="23dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount/Each"
+                            android:textColor="#3949AB"
+                            android:textStyle="bold"
+                            android:textSize="23dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time of travel"
+                            android:textColor="#3949AB"
+                            android:textStyle="bold"
+                            android:textSize="23dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category"
+                            android:textColor="@color/yellow"
+                            android:textSize="23dp"/>
+                        <TextView
+                            android:id="@+id/seats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Seats"
+                            android:textColor="@color/yellow"
+                            android:textSize="23dp"/>
+                        <TextView
+                            android:id="@+id/amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Amount/Each"
+                            android:textColor="@color/yellow"
+                            android:textSize="23dp"/>
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time of travel"
+                            android:textColor="@color/yellow"
+                            android:textSize="23dp"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount"
+                        android:textColor="#3949AB"
+                        android:textStyle="bold"
+                        android:textSize="23dp"/>
+
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Total Amount"
+                        android:textColor="#039BE5"
+                        android:textStyle="bold"
+                        android:textSize="17dp"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:textColor="#3949AB"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="italic"
+                    android:textSize="17dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/icn_person_24"
+                    android:drawablePadding="7dp"
+                    android:inputType="phone"
+                    android:layout_height="50dp"
+                    android:textColorHint="@color/white"
+                    android:background="@drawable/login_inputs"
+                    android:hint="Phone number"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Amount "
+                    android:textColor="#3949AB"
+                    android:textStyle="italic"
+                    android:textSize="17dp"/>
+                <TextView
+                    android:id="@+id/total2"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:editable="false"
+                    android:layout_height="50dp"
+                    android:textColorHint="@color/white"
+                    android:background="@drawable/login_inputs"/>
+
+                <TextView
+                    android:id="@+id/register"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:editable="false"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="Check Out"
+                    android:clickable="true"
+                    android:background="@drawable/submit_btn"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

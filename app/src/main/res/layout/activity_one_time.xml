@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:elevation="0dp"
+    android:background="@color/orange"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OneTimeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/app"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/orange">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TRAVELBILAWAS"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Booking App"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/app"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="@drawable/login_bg">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/pwd"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Verify Code"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="17dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/text1"
+                    android:layout_width="55dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:layout_height="55dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25dp"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:inputType="number"
+                    android:textColorHint="@color/white"
+                    android:background="@drawable/login_inputs"/>
+                <EditText
+                    android:id="@+id/text2"
+                    android:layout_width="55dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:layout_height="55dp"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:inputType="number"
+                    android:textColorHint="@color/white"
+                    android:background="@drawable/login_inputs"/>
+                <EditText
+                    android:id="@+id/text3"
+                    android:layout_width="55dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:layout_height="55dp"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="15dp"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:inputType="number"
+                    android:textColorHint="@color/white"
+                    android:background="@drawable/login_inputs"/>
+                <EditText
+                    android:id="@+id/text4"
+                    android:layout_width="55dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:layout_height="55dp"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:maxLength="1"
+                    android:layout_marginLeft="15dp"
+                    android:textAlignment="center"
+                    android:inputType="number"
+                    android:textColorHint="@color/white"
+                    android:background="@drawable/login_inputs"/>
+                <EditText
+                    android:id="@+id/text5"
+                    android:layout_width="55dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:layout_height="55dp"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="15dp"
+                    android:inputType="number"
+                    android:textColorHint="@color/white"
+                    android:background="@drawable/login_inputs"/>
+
+            </LinearLayout>
+
+
+
+            <EditText
+                android:id="@+id/confirm"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:editable="false"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Confirm Code"
+                android:clickable="true"
+                android:background="@drawable/submit_btn"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginTop="40dp"
+                android:textSize="15dp"
+                android:text="Request new code"/>
+
+
+
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:editable="false"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:text="Resend Code"
+                android:clickable="true"
+                android:background="@drawable/already_btn"/>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

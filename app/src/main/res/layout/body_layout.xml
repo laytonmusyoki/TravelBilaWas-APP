@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="60dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="301dp"
+        android:background="@color/white"
+        android:gravity="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15%"
+                    android:textColor="@color/lavender"
+                    android:textStyle="bold"
+                    android:textSize="50dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/lavender"
+                    android:text="Today's special!"
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get discount for every"
+                    android:textSize="18dp"
+                    android:textColor="#555"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="booking.Only valid for today"
+                    android:textSize="18dp"
+                    android:textColor="#2F2C2C" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="300dp"
+                    android:src="@drawable/bus1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview"
+        android:text="Categories"
+        android:textColor="#8BC34A"
+        android:textStyle="bold"
+        android:textSize="27dp"/>
+
+
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/categories">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="230dp"
+                    android:layout_marginRight="15dp"
+                    android:padding="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/categories_bg">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Solo Booking"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:cardCornerRadius="20dp">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/solo"/>
+                    </androidx.cardview.widget.CardView>
+                    <Button
+                        android:id="@+id/solo"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Explore..."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="230dp"
+                    android:padding="15dp"
+                    android:gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/categories_bg">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Institution"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:cardCornerRadius="20dp">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/institute"/>
+                    </androidx.cardview.widget.CardView>
+                    <Button
+                        android:id="@+id/institution"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Explore..."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="230dp"
+                    android:padding="15dp"
+                    android:gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/categories_bg">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Event Booking"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"/>
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="100dp"
+                        android:background="@color/white"
+                        android:layout_height="100dp"
+                        app:cardCornerRadius="20dp">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/event1"/>
+                    </androidx.cardview.widget.CardView>
+                    <Button
+                        android:id="@+id/event"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Explore..."/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="230dp"
+                    android:padding="15dp"
+                    android:gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/categories_bg">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Parcel Sending"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:cardCornerRadius="20dp">
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/parcel"/>
+                    </androidx.cardview.widget.CardView>
+                    <Button
+                        android:id="@+id/parcel"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Explore..."/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="15dp"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="110dp"
+        android:background="@drawable/description_layout"
+        android:layout_below="@id/horizontal_scroll">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRAVELBILAWAS"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="Welcome to our bus booking app, where convenience meets travel seamlessly. Whether you're planning a quick weekend getaway or a long-distance journey, our app makes booking your bus tickets a breeze. With a user-friendly interface, real-time availability, and secure payment options, you can find the perfect bus at the best price, tailored to your schedule. Say goodbye to long queues and last-minute hassles—download our app now and embark on your next adventure stress-free!"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
